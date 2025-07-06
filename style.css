@@ -1,0 +1,72 @@
+body{
+    margin: 0%;
+    background-color: rgb(179, 119, 46);
+}
+#container{
+    background-color: rgb(112, 70, 19);
+    height: 75vh;
+    margin: 5%;
+    text-align: center;
+    font-family: sans-serif;
+    border-radius:3%;overflow: none;
+
+}
+#choice select{
+    background-color: bisque;
+    width: 60%;
+    height: 2rem;
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-weight: bold;
+}
+#choice{
+    background-color: rgba(59, 34, 4, 0.445);
+    width: 90%;
+    margin: auto;
+    border-radius: 0.7rem;
+    overflow: none;
+    margin-bottom: 1rem;
+}
+#choice p{
+    margin-bottom: 0.7em;
+}
+::placeholder{
+    font-size: smaller;
+    font-weight: bolder;
+    
+}
+.inputkg{
+    display:block;
+    justify-self: center;
+    font-size: 1rem;
+    margin-bottom: 0.7em;
+
+}
+.inputpound{
+    display:block;
+    justify-self: center;
+    font-size: 1rem;
+    margin-bottom: 0.7em;
+}
+.hidder{
+    display: none;
+}
+#submit{
+    font-size: 1.5em;
+    border-style: outset;
+    margin-bottom: 1em;
+    
+}
+.result{
+
+    font-weight: bolder;
+    display: block;
+    margin: auto;
+    color: azure;
+}
+.errormsg{
+      font-weight: bolder;
+    display: block;
+    margin: auto;
+    color: rgb(228, 10, 10);
+}
