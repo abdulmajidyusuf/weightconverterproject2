@@ -23,7 +23,7 @@ else{
 };
 
 }
-weightChoice.addEventListener("click", reLoad);
+weightChoice.addEventListener("hover", reLoad);
 
 
 
