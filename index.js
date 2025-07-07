@@ -13,6 +13,8 @@ else{
 };
 
 function reLoad(){
+    resultJS.innerHTML = "";
+    
     if(weightChoice.value === "kg"){
     lbInput.classList.add('hidder');
     kgInput.classList.remove('hidder');
@@ -45,7 +47,7 @@ function convertWeight(){
         resultJS.innerHTML = `${lbValue} pounds is equivalent to ${newweight.toFixed(2)} kg`
         resultJS.classList.remove('errormsg');
         resultJS.classList.add('result');
-        lbInput.value = "";
+        kgInput.value = "";
     }
     else if (kgValue === ""  && lbValue === ""){
         resultJS.innerHTML = "you didn`t type a number !!";
