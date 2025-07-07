@@ -29,21 +29,23 @@ else{
 
 
 function convertWeight(){
-     const kgValue = kgInput.value;
-    const lbValue = lbInput.value;
+     let kgValue = kgInput.value;
+    let lbValue = lbInput.value;
 
     let newweight
     if(weightChoice.value === "kg" && kgValue >= 1){
         newweight = kgValue * 2.205;
-        resultJS.innerHTML = `${kgValue} kilograms converted to pounds is equivalent to ${newweight.toFixed(2)} Kg`;
+        resultJS.innerHTML = `${kgValue} kilograms is equivalent to ${newweight.toFixed(2)} pounds`;
         resultJS.classList.remove('errormsg');
         resultJS.classList.add('result');
+        lbInput.value = "";
     }
     else if (weightChoice.value === "pounds" && lbValue >= 1){
         newweight = lbValue / 0.454;
-        resultJS.innerHTML = `${lbValue} pounds converted to kilograms is equivalent to ${newweight.toFixed(2)} Lb`
+        resultJS.innerHTML = `${lbValue} pounds is equivalent to ${newweight.toFixed(2)} kg`
         resultJS.classList.remove('errormsg');
         resultJS.classList.add('result');
+        lbInput.value = "";
     }
     else if (kgValue === ""  && lbValue === ""){
         resultJS.innerHTML = "you didn`t type a number !!";
