@@ -43,7 +43,7 @@ function convertWeight(){
         lbInput.value = "";
     }
     else if (weightChoice.value === "pounds" && lbValue >= 1){
-        newweight = lbValue / 0.454;
+        newweight = lbValue / 2.205;
         resultJS.innerHTML = `${lbValue} pounds is equivalent to ${newweight.toFixed(2)} kg`
         resultJS.classList.remove('errormsg');
         resultJS.classList.add('result');
